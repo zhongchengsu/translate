@@ -40,7 +40,11 @@ translate.tr = function tr(str){
   Debug(str);
   var translate = str;
   if(str !== undefined && str !== null) {
-    translate = (this.hashTable.get(str)).value;
+    var tr = this.hashTable.get(str);
+    Debug(tr);
+    if (tr !== undefined) {
+      translate = tr.value;
+    }
   }
   return translate;
 }
