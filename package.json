@@ -1,5 +1,5 @@
 {
-  "name": "translate",
+  "name": "hashTranslate",
   "version": "1.0.0",
   "description": "Translate english to other languages by using a translating list.",
   "main": "translate.js",

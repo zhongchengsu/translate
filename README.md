@@ -2,10 +2,12 @@
 
 # Usage
 
+  npm instll hashTranslate
+
 demo
 
 ```javascript
-  var tr=require('./translate');//("file")
+  var tr=require('hashTranslate');//("file")
   var table = require("./tr.json");
   tr.init(table);
   console.log(tr.tr("abc"));
