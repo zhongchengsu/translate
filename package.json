@@ -1,0 +1,22 @@
+{
+  "name": "translate",
+  "version": "1.0.0",
+  "description": "Translate english to other languages by using a translating list.",
+  "main": "translate.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhongchengsu/translate.git"
+  },
+  "keywords": [
+    "translate"
+  ],
+  "author": "JohnSu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhongchengsu/translate/issues"
+  },
+  "homepage": "https://github.com/zhongchengsu/translate#readme"
+}
