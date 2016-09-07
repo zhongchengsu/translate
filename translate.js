@@ -1,11 +1,47 @@
-function translate(transTable){
+function translate(){
   /*init hash table for translate*/
-  this.hashTable = [];
+  this.hashTable = null;
 }
 
-translate.tr = function tr(str,callback){
-  console.log(str);
-  callback(null, "测试");
+function Debug(str)
+{
+  //console.log(str);
+}
 
+translate.init = function init(trTable){
+  
+  Debug(trTable);
+  if(trTable !== undefined || trTable !== null)
+  {
+    if(this.hashTable == undefined || this.hashTable == null)
+    {
+      //init table
+      var hashtable = require('hashtable');
+      this.hashTable = new hashtable();
+      for (str in trTable) {
+          Debug(trTable[str]["key"]);
+          Debug(trTable[str]["value"]);
+          this.hashTable.put(trTable[str]["key"], {value: trTable[str]["value"]});
+      }
+    }
+    else {
+      // table has been init.
+      console.log("Translate table has already built!");
+    }  
+  }
+  else
+  {
+    //throw err, please input a exits file name
+    console.log("Input value is null!")
+  }
+}
+
+translate.tr = function tr(str){
+  Debug(str);
+  var translate = str;
+  if(str !== undefined && str !== null) {
+    translate = (this.hashTable.get(str)).value;
+  }
+  return translate;
 }
 module.exports = translate;

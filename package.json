@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/zhongchengsu/translate/issues"
   },
-  "homepage": "https://github.com/zhongchengsu/translate#readme"
+  "homepage": "https://github.com/zhongchengsu/translate#readme",
+  "dependencies": {
+    "hashtable": "^2.0.2"
+  }
 }
